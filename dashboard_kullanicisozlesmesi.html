@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="sidebar">
+            <div class="logoDiv">
+              <div class="imgDiv">
+                <img class="bigLogo" src="./assets/img/Group 627.png" />
+                <img class="smallLogo sidebarHidden" src="./assets/img/Path 2943.png">
+              </div>
+              <div>
+                <button class="closeOpenSidebarBTN"><i class="fa-solid fa-angles-left"></i></button>
+              </div>
+            </div>
+            <div class="sidebarContent">
+              <div class="balance">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30.154"
+                    height="29.267"
+                    viewBox="0 0 30.154 29.267"
+                  >
+                    <path
+                      id="svg8"
+                      d="M10.543,17.577V16.069m6.034,1.509V13.051m6.034,4.526V10.034M10.543,29.646l6.034-6.034,6.034,6.034M3,4H30.154M4.509,4H28.646V22.1a1.509,1.509,0,0,1-1.509,1.509H6.017A1.509,1.509,0,0,1,4.509,22.1Z"
+                      transform="translate(-1.5 -2.5)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </div>
+                <div class="balanceText">
+                  <h4>Bakiyeniz</h4>
+                  <div class="balanceNumberDiv">
+                    <p class="balanceTextMain"><span>10.00</span> ₺</p>
+                    <button class="hiddenShowBalanceBTN"><i class="fa-solid fa-eye-slash"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebarList">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Bakiye Yükle</p>
+                        <span>10.00 ₺</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="showMore">
+                <button class="showMoreBTN">Daha Fazla Göster</button>
+                <div class="showMoreList hidden">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        <section class="mainSection">
+            <div class="dashboardHeader">
+                <div class="balanceDiv">
+                    <p> <span>1.270</span> ₺ </p>
+                    <button class="hiddenShowBalanceBTN"><i class="fa-solid fa-eye-slash"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-regular fa-sun-bright"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-light fa-bell"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-light fa-bars"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-light fa-user"></i></button>
+                </div>
+            </div>
+            <div class="contents oneContent">
+                <div class="dashboardTop">
+                    <div class="image">
+                        <img src="assets/img/11.png" alt="">
+                    </div>
+                    <div class="textContent">
+                        <h4>Sipariş Oluştur</h4>
+                        <p>2000 TL ve üzeri ödemelerde otomatik olarak %3 bonus verilmektedir.😃</p>
+                        <a href="#">Bakiye ekle <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <div class="top agreementTop">
+                    <a href="#">Sozlesme</a>
+                    <a href="#" class="active">Sozlesme</a>
+                    <a href="#">Sozlesme</a>
+                </div>
+                <div class="agreementDiv">
+                    <div class="headerText">
+                        <h3>Kullanım ve Üyelik Sözleşmesi</h3>
+                    </div>
+                    <div class="texts">
+                        <div class="text">
+                            <h4>1- TARAFLAR</h4>
+                            <p>
+                                1.1. Bu sözleşme hizmetler bölümünde belirtilen hizmetleri (Hizmetler olarak anılacaktır) sağlayan uluslararası satış ve pazarlama faaliyetleri ile muhasebe ve faturalandırma METİN ÇAKIR (Yalı Mahallesi, Plaj Caddesi, No 54, İç Kapı No 2 Karasu / Sakarya Türkiye)  ; Ar-ge, Çağrı merkezi ve destek hizmet faaliyetlerini Dijital İstasyon (Yalı Mahallesi, Plaj Caddesi, No 54, İç Kapı No 2 Karasu / Sakarya Türkiye)  (Dijital İstasyon olarak anılacaktır) ile Yeni müşteri kaydı bölümünde belirtilen detayları ile belirtilen kişi/kurum (Müşteri olarak anılacaktır) arasında DİJİTAL İSTASYON'a ait olan <a href="https://dijitalistasyon.com/">https://dijitalistasyon.com/</a> internet adresinde faaliyet gösteren internet sitesinin (Site olarak anılacaktır) kullanımı ve bu site üzerinden satın alınacak hizmetleri aşağıda belirtilen madde ve koşullar ile interaktif imza ile imza altına alınmış sayılacaktır.
+                            </p>
+                            <p>
+                                1.2. Taraflar bu sözleşmede yazılı bilgilerin doğruluğunu beyan, kabul ve taahhüt ederler. Müşteri'nin müşteri kayıt kısmında detaylarını belirttiği bilgilerin doğruluğunu taahhüt eder.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h4>2- SORUMLULUKLAR</h4>
+                            <p>
+                                2.1. Belirtilen şartların sizin için uygun olmaması halinde lütfen <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> sitesine bakiye yüklemeyiniz ve kullanmayınız.
+                            </p>
+                            <p>
+                                - Siteyi kullanarak ve kişisel bilgilerinizin yer aldığı üyelik formunu doldurarak bu sayfalarda yazılı şartları kabul etmiş sayılmaktasınız.
+                            </p>
+                            <p>
+                                - <a href="#">https://dijitalistasyon.com</a> işbu site ve site uzantısında mevcut her tür hizmet, ürün, kullanma koşulları ile sitede sunulan bilgileri önceden bir ihtara gerek olmaksızın değiştirme, yeniden organize etme, yayını durdurma hakkını saklı tutar.
+                            </p>
+                            <p>
+                                - Değişiklikler sitede yayın tarihinde yürürlüğe girer.
+                            </p>
+                            <p>
+                                
+- <a href="#">https://dijitalistasyon.com</a> kullanıcılarına siteye her girişte kullanıcı sözleşmesi, hizmet şartları ve iptal / iade koşulları sayfalarını ziyaret etmelerini tavsiye etmektedir.
+
+                            </p>
+                            <p>
+                                - Bu koşullar link verilen diğer web sayfaları için de geçerlidir.Kullanıcı sözleşmesi, hizmet şartları ve iptal / iade koşulları <a href="https://dijitalistasyon.com ">https://dijitalistasyon.com </a> ’un tüm üyelerine açıktır.
+                            </p>
+                            <p>
+                                - Site üzerinde verilen hizmetlerin tamamı ücretlidir.Aşağıdaki yazılı durumlarda, site yönetimi kullanıcının site kullanımını engelleyebilir ve aşağıdaki girişimlere karışan kişi veya kişiler hakkında kanuni haklarını saklı tutar:
+                            </p>
+                            <p>
+                                2.2. DİJİTAL İSTASYON, müşterinin talebi üzerine sipariş olarak ilettiği hizmetleri sağlayacaktır. Siparişin kabulü mesajı ile DİJİTAL İSTASYON ilgili ücreti tahsil ettiğini kabul edip söz konusu siparişte belirtilen hizmeti vereceğini taahhüt edecektir.
+                            </p>
+                            <p>
+                                2.3. Yanlış, düzensiz, eksik ve yanıltıcı bilgiler, genel ahlak kurallarına uygun olmayan ifadeler içeren ve Türkiye Cumhuriyeti yasalarıyla ters düşen bilgilerin siteye kaydedilmesi,
+                            </p>
+                            <p>
+                                
+2.4. Site içeriğinin izinsiz olarak kısmen veya tümüyle kopyalanması,
+
+                            </p>
+                            <p>
+                                2.5. Kullanıcılara verilen ya da kendi belirledikleri kullanıcı adı, şifre gibi bilgilerin, kullanım haklarının, üçüncü kişi ya da kuruluşlarla paylaşılmasından (bu bilgilerin kullanıcı dışındaki kişiler tarafından kullanılmasından) kaynaklanacak her türlü zarardan doğrudan Kullanıcı sorumludur. Aynı şekilde Kullanıcı, internet ortamında bir başkasına ait IP adresi, elektronik posta adresi, kullanıcı adı gibi kişisel bilgileri kullanamayacağı gibi diğer kullanıcıların özel bilgilerine de izinsiz olarak ulaşamaz veya bunları kullanamaz. Kullanıcı bu şekilde bir kullanımdan dolayı doğabilecek her türlü hukuki ve cezai yükümlülüğü kabul etmiş sayılmaktadır.
+                            </p>
+                            <p>
+                                2.6. Sitenin güvenliğini tehdit edecek, sitenin çalışmasını engelleyecek yazılımların kullanılması, faaliyetlerin yapılması, yapılmaya çalışılması ve bilgilerin alınması, silinmesi, değiştirilmesi.
+
+                            </p>
+                            <p>
+                                
+2.7. <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> bu internet sitesi genel görünüm ve dizaynı ile internet sitesinde tüm bilgi, resim, <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> markası ve diğer markalar, <a href="#">https://dijitalistasyon.com</a> alan adı, logo, ikon, demonstratif, yazılı, elektronik, grafik veya makinede okunabilir şekilde sunulan teknik veriler, bilgisayar yazılımları, uygulanan satış sistemi, iş metodu ve iş modeli de dahil tüm materyallerin (“Materyaller”) ve bunlara ilişkin fikri ve sınai mülkiyet haklarının sahibi veya lisans sahibidir ve yasal koruma altındadır. Internet sitesinde bulunan hiçbir Materyal; önceden izin alınmadan ve kaynak gösterilmeden, kod ve yazılım da dahil olmak üzere, değiştirilemez, kopyalanamaz, çoğaltılamaz, başka bir lisana çevrilemez, yeniden yayımlanamaz, başka bir bilgisayara yüklenemez, postalanamaz, iletilemez, sunulamaz ya da dağıtılamaz.
+
+                            </p>
+                            <p>
+                                Internet sitesinin veya mobil uygulamanın bütünü veya bir kısmı başka bir internet sitesinde izinsiz olarak kullanılamaz. Aksine hareketler hukuki ve cezai sorumluluğu gerektirir. <a href="#">https://dijitalistasyon.com</a> 'un burada açıkça belirtilmeyen diğer tüm hakları saklıdır.
+                            </p>
+                            <p>
+                                
+2.8. <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> ’a iletilen tüm eleştirilerin hakkı <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> a aittir, istenildiği taktirde <a href="#">https://dijitalistasyon.com</a> tarafından pazarlama amacıyla kullanılabilir.
+
+                            </p>
+                            <p>
+                                
+2.9.DİJİTAL İSTASYON ihtiyaç duyduğunda müşteri kimlik teyidini müşteri kaydı sırasında belirttikleri telefon, e-posta, açık adreslerini kullanarak yapabilir.
+
+                            </p>
+                            <p>
+                                2.10.Müşteri beyan ettiği bilgilerin tümünün değiştiğini bildirdiği taktide daha önce almış olduğu hizmet var ise yapmış olduğu ödemeye ait belgeyi, dekontu ve yaşadığı ülkeye ait kimliğini ibraz etmekle yükümlüdür. Müşteri yapmış olduğu ödemeye ait belge ve/veya dekont ile ibraz edeceği kimlikteki ad soyad bilgisi ile eşleşmiş ve müşteri hesabındaki ödeme kaydı ile tutarsızlık olmaması gerekmektedir. Aksi taktirde müşteri eğer şifresiyle hesabına ulaşamıyor ise hesabıyla ilgili değişiklik yaptıramaz/yapamaz ve almış olduğu hizmetlerle ilgili bilgi ve hak talebinde bulunamaz.
+                            </p>
+                            <p>
+                                
+2.11.Müşteri hizmet dahilinde sahip olduğu yazılım ve programları kullanarak erişim hakkı bulunmayan dosya veya programlara erişmemeyi, bu tarz bir sorundan dolayı herhangi bir problem yaratmamayı, oluşabilecek sorun ve problemlerde zararı karşılamayı taahhüt eder.
+
+                            </p>
+                            <p>
+                                2.12.Müşteri Sosyal medya hizmetleri , sitedeki bütün hizmetler veya aldığı hizmetlerin kullanılması sırasında yürürlükte olan veya sözleşme süresince yürürlülüğe girecek olan vergi, harç ve benzer yükümlülüklerin kendisine ait olduğunu ve karşılayacağını kabul ve taahhüt eder.
+
+                            </p>
+                            <p>
+                                2.13.DİJİTAL İSTASYON müşterilerine sağladığı ücretsiz hizmetlerini haber vermeksizin durdurma hakkına sahiptir.
+                            </p>
+                            <p>
+                                
+2.14. <a href="https://dijitalistasyon.com ">https://dijitalistasyon.com </a> u ziyaret eden kullanıcıların bilgileri (ziyaret süresi, zamanı, görüntülenen sayfalar) onlara daha iyi hizmet edebilmek amacı ile takip edilebilir.
+
+                            </p>
+                            <p>
+                                2.15. Kullanıcı, diğer kullanıcıların ve ziyaretçilerin <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> uygulamasını kullanmasını önleyici veya zorlaştırıcı hareketlerde bulunamaz, sunucuları ya da veritabanlarını otomatik programlar yükleyip zorlayamaz/kilitleyemez. Hile girişimlerinde bulunamaz. Bulunması halinde üyeliğinin sonlandırılacağını ve durumdan doğabilecek her türlü hukuki, cezai sorumluluğu kabul eder.
+                            </p>
+                            <p>
+                                2.16. <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> yönetimi ile yapılan mesajlaşmaların yedeğinin alınması kişilerin sorumluluğundadır ve <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> tarafından önerilmektedir. Mesajlaşmaların yedeklerinin alınmaması nedeniyle kaybolmasından, silinmesinden veya hasar görmesinden <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> sorumlu tutulamaz.
+                            </p>
+                            <p>
+                                2.17. Üyelik iptali ve hesap silme işlemi, kullanıcı tarafından destek talebi oluşturularak yapılabilir. Üyeliğini bitiren kullanıcının siteye giriş yetkisi iptal edilecektir. Üyeliğini iptal eden kişi bu işlemin geri dönüşü olmadığını kabul eder. <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> a da kullanıcının kendisi tarafından sonlandırılan kullanıcı hesabına ait her türlü kaydı silip silmeme kararı <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> ya aittir. Kullanıcı silinen kayıtlarla ilgili herhangi bir hak veya tazminat talebinde bulunamaz.
+
+                            </p>
+                            <p>
+                                
+2.18. Bu internet sitesi <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> kontrolü altında olmayan başka internet sitelerinde bağlantı veya referans içerebilir. <a href=" https://dijitalistasyon.com"> https://dijitalistasyon.com</a>, bu sitelerin içeriklere veya içerdikleri diğer bağlantılardan sorumlu değildir.
+
+
+                            </p>
+                            <p>
+                                2.19. <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a>, kullanıcı tarafından siteye ya da mobil uygulamaya kayıt formunda belirtilen veya daha sonra kendisi tarafından güncellenen adresi, e-posta adresi, sabit ve mobil telefon hatları ve diğer iletişim bilgileri üzerinden mektup, e-posta, SMS, telefon görüşmesi ve diğer yollarla kullanıcıya iletişim, pazarlama, bildirim ve diğer amaçlarla kullanıcıya ulaşma hakkı bulunmaktadır. Kullanıcı işbu sözleşmeyi kabul etmekle aksine bir yazılı bildirimi olmadığı müddetçe <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> nın kendisine yönelik yukarıda belirtilen iletişim faaliyetlerinde bulunabileceğini kabul ve beyan etmektedir.
+                            </p>
+                            <p>
+                                2.20. Sitenin belirli yerlerinde o bölüme özel farklı kurallar ve yükümlülükler belirtilebilir. Bu bölümleri kullanan kişi ve kuruluşlar peşinen belirtilen bu kuralları kabul etmiş sayılır.
+                            </p>
+                            <p>
+                                2.21. Kullanıcılarımızın kişisel bilgilerini ve gizliliklerini korumak için aldığımız önlemler ve bu konudaki genel politikamızı okumak için, lütfen “Kullanım Sözleşmesi” sayfasını okuyunuz. Kullanıcı, servisten faydalanmaya başlandığı andan itibaren bu katılım sözleşmesinin tüm hükümlerini kabul etmiş sayılacağını ve sözleşmenin kendisi hakkında hüküm ifade edeceğini kabul eder. Kullanıcı işbu sözleşme ile üstlenmiş olduğu yükümlülüklere aykırı hareketi nedeniyle <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> nın uğrayacağı her türlü zararı aynen tazmin etmeyi kabul eder. <a href="https://dijitalistasyon.com">https://dijitalistasyon.com</a> 'un, kullanıcının sözleşmeye aykırı davranışları nedeniyle kamu kurumlarına ve/veya üçüncü şahıslara ödemek zorunda kalabileceği her türlü tazminat ve/veya idari/adli para cezaları için kullanıcıya aynen rücu hakkına sahiptir.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h4>ASKIYA ALINMA </h4>
+                            <p>
+                                
+3.1. Ödeme konusunda problem yaşanması, kredi kartı ile ödeme talimatı olan müşterilerde provizyon sorunları veya hüküm ve yükümlülükler ile ilgili maddelerden dolayı DİJİTAL İSTASYON, müşteriye verilen hizmetlerin tümünü tamamını durdurma hakkını saklı tutar.
+
+                            </p>
+                            <p>
+                                3.2. Ödeme konusunda problem yaşanması, çalıntı kredi kartı ile ödeme yapıp DİJİTAL İSTASYON tarafınca hizmet almaya çalışılması ve bunu tespiti , şüphesi durumunda Bilgi Teknolojileri ve İletişim Kurumuna aynı zamanda ödeme firmasına müşterinin DİJİTAL İSTASYON üzerindeki bütün bilgileri log kayıtları dahil olmak üzere paylaşabilir hizmetlerin tümünü tamamını durdurma hakkını saklı tutar.
+                            </p>
+                            <p>
+                                3.3. Bu durumun devam süresince müşteri adına erişimleri yapılamaz.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h4>YETKİLİ MAHKEME VE İCRA DAİRELERİ</h4>
+                            <p>
+                                4.1. İş bu sözleşme bununla birlikte 4. madde ve alt başlıklardan ibaret olup, taraflarca okunup anlaşılarak imza altına alınmıştır.Müşteri sipariş geçtiği zaman sözleşmeyi kabul ettiğini beyan ve taahhüt eder. (İmza altına alınma. siparişin internet ortamında DİJİTAL İSTASYON'a gönderilmesi ile gerçekleşmiş kabul edilir). DİJİTAL İSTASYON gerek gördüğü taktirde yeni maddeler ve/veya alt başlıklar ekleyebilir, çıkartabilir ya da maddeler üzerinde değişiklik yapabilir. Müşteri bu değişiklikleri önceden kabul ettiğini beyan ve taahhüt eder.
+                            </p>
+                            <p>
+                                
+4.2. İş bu sözleşmenin uygulanması sırasında doğacak her türlü uyuşmazlıkların çözümünde Müşteri hangi ülkenin vatandaşı ise o ülkede bulunan Mahkemeler ve İcra Daireleri yetkilidir.
+
+                            </p>
+                            <p>
+                                4.3. DİJİTAL İSTASYON gerekli gördüğü taktirde 6.b maddesinde belirtilen "Müşteri hangi ülkenin vatandaşı ise o ülkede bulunan Mahkemeler ve İcra Daireleri" metninde geçen mahkemeler ve icra daireleri yerine başka mahkemeler ve icra dairelerinde davalar açabilir ve her türlü yasal hakkını arayabilir.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h4>HİZMET SÜREKLİLİĞİ</h4>
+                            <p>
+                                
+5.1 https://dijitalistasyon.com taahhüt ettiği hizmetlerin sürekliliğini sağlamak için, işbu sözleşmede herhangi bir bildirimde bulunmaksızın tek taraflı değişiklik yapabilir.
+
+                            </p>
+                            <p>
+                                https://dijitalistasyon.com 'un her zaman herhangi bir gerekçe göstermeksizin, tek taraflı olarak verdiği hizmeti sürekli veya geçici olarak durdurma, servisin içeriğini değiştirme veya iptal etme hakkı vardır.
+                            </p>
+                            <p>
+                                Kullanıcı işbu hakkı kabul eder. https://dijitalistasyon.com, herhangi bir değişiklik olması halinde güncel kullanım şartlarını aynı link altında yeni tarih güncellemesi ile sitesinde yayınlanacak, gerek görmesi halinde elektronik posta yada sms ile kullanıcılarına bildirilecektir.
+                            </p>
+                            <p>
+                                Yenilenmiş güncel kullanım şartları, https://dijitalistasyon.com da yayınlandığı andan itibaren geçerli olacak ve https://dijitalistasyon.com sitesinin hizmetlerinin kullanımı o andan itibaren yenilenmiş kullanım şartlarına bağlı olacaktır.İşbu sözleşme hükümlerine aykırı materyalleri https://dijitalistasyon.com sitesine ya da mobil uygulamasına göndermiş olan üyenin üyeliği, herhangi bir bildirim yapılmaksızın https://dijitalistasyon.com tarafından tek taraflı olarak sona erdirilebilir
+                            </p>
+                            <p>
+                                
+5.2 Sözleşmenin Yürürlüğe Girmesi Kullanıcı, kayıt formunu doldurup onayladığı ya da bu sistemi kullanarak herhangi bir hizmet aldığı ya da sipariş verdiği andan itibaren https://dijitalistasyon.com sözleşmesine uymayı taahhüt etmiş kabul edilir. Sözleşme, üyeliğin sona ermesi ile veya işbu sözleşmede sayılan fesih hallerinden herhangi birinin gerçekleşmesi ile hiçbir uyarıya gerek kalmaksızın kendiliğinden hükümsüz kalacaktır.
+
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h4>FESİH</h4>
+                            <p>
+                                Sistem tarafından yapılan fiyat hataları bir ürünün fiyatının yanlış girilmesi veya fiyatın bir bedel teşkil etmemesi gibi durumlarda DİJİTAL İSTASYON hiç bir ihtar ve ihbara gerek kalmaksızın sözleşmeyi tek taraflı olarak fesih etme hakkına sahiptir. Müşteri iş bu sözleşmenin herhangi bir maddesine aykırı davranarak sorumluluklarını ve taahhütlerini yerine getirmediği takdirde yada iş bu sözleşmenin ön yüzünde beyan ettiği bilgilerin doğru olmadığının tespiti halinde, yukarıda belirtilen sözleşmeyi askıya alma halinin 7 günden fazla devam etmesi halinde, DİJİTAL İSTASYON hiç bir ihtar ve ihbara gerek kalmaksızın sözleşmeyi tek taraflı olarak fesih etme hakkına sahiptir.
+                            </p>
+                            <p>
+                                Bu şekilde gerçekleşecek fesih sonrasında müşteri; kalan süreye bakılmaksızın ödemiş olduğu son sözleşme ücretini geri isteyemeyeceğini, fesih tarihinde yürürlükte olan emsal sözleşme bedelinin 5 katı ticari cezai tazminat ödemeyi beyan, kabul ve taahhüt eder.
+                            </p>
+                            <p>
+                                
+Müşteri hiç bir gerekçe göstermeksizin sözleşme normal süre ile sona ermeden 10 gün önce yazılı olarak ihtar etmek şartı ile iş bu sözleşmeyi süresi sonunda fesih etme hakkına sahiptir.
+
+                            </p>
+                            <p>
+                                Sözleşmenin sona erme süresinden önce müşteri tarafından fesih edilmesi halinde sözleşme sonuna kadar ödenecek olan ücretlerin 1/2 sini defaten ve peşin olarak ödemeyi beyan, kabul ve taahhüt eder.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h4>GİZLİLİK SÖZLEŞMESİ</h4>
+                            <p>
+                                Bu gizlilik ilkeleri DİJİTAL İSTASYON tarafından, www.dijitalistasyon.com 'un gizlilik konusundaki sorumluluklarının tespiti için hazırlanmıştır.
+                            </p>
+                            <p>
+                                https://dijitalistasyon.com üyelerinin site üzerinde yaptığı işlemlerin kayıtları kesinlikle gizli tutulmakta ve kesinlikle 3. şahıs ve kurumlar ile paylaşılmamaktadır.
+
+                            </p>
+                            <p>
+                                Vermiş olduğunuz siparişler servis sağlayıcıları ile paylaşılmaktadır. Ancak resmi devlet kurumları tarafın talep edilmesi halinde kayıtlar resmi devlet kurumu görevlilerine sunulabilir.
+                            </p>
+                            <p>
+                                
+Ödeme sayfasında istenen kredi kartı bilgileri, siteye bakiye yükleyen müşterilerimizin güvenliğini en üst seviyede tutmak amacıyla hiçbir şekilde https://dijitalistasyon.com ve ona hizmet veren şirketlerin sunucularında tutulmamaktadır
+                            </p>
+                            <p>
+                                Bu şekilde ödemeye yönelik tüm işlemlerin https://dijitalistasyon.com ara yüzü üzerinden banka, paytr ödeme sistemleri ve bilgisayarınız ya da telefonunuz arasında gerçekleşmesi sağlanmaktadır.
+                            </p>
+                            <p>
+                                Bizlere her zaman aşağıda belirtilen iletişim bilgilerinden yararlanarak ulaşabilirsiniz. Müşterinin sisteme girdiği tüm bilgilere sadece müşteri ulaşabilmekte ve bu bilgileri sadece müşteri değiştirebilmektedir.
+                            </p>
+                            <p>
+                                Bir başkasının bu bilgilere ulaşması ve bunları değiştirmesi mümkün değildir.
+                            </p>
+                            <p>
+                                https://dijitalistasyon.com adresli web sitemizden başarılı bir sipariş oluşturmanız sitemize e-posta adresinize ve telefon numaranıza duyurularımızı ulaştırma izni vermeniz anlamına gelmektedir.
+                            </p>
+                            <p>
+                                
+https://dijitalistasyon.com ’dan gönderilen e-mail ve sms duyurularından haberdar olmak istemiyorsanız aşağıdaki email adresimize konuyu bildiren bir eposta göndermeniz gerekmektedir.
+
+                            </p>
+                            <p>
+                                E-posta gönderiminizi takiben email adresiniz ve telefon numaranız mesaj listemizden çıkartılacaktır.
+
+                            </p>
+                            <p>
+                                Email: info@dijitalistasyon.com
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h4>GERİ ÖDEME POLİTİKASI</h4>
+                            <p>
+                                • Geri ödeme yapılmamaktadır, kalan bakiye dijitalistasyon.com içerisinde kullanılmalıdır.
+                            </p>
+                            <p>
+                                • Müşteri bakiyesini iade olarak talep ettiğinde durumu DİJİTAL İSTASYON Finans birimi incelemesi sonucunda karara dayalı olarak iade hakkını gizli tutar olası iadenin kabulu durumunda iade süreci 30 gün içerisinde yapılmaktadır.
+                            </p>
+                            <p>
+                                
+• Instagram/Twitter/Facebook vb. servislerin ne zaman güncelleme yapabileceğini bilemeyiz, herhangi bir düşüş yaşanması halinde servis sağlayıcısı telafi yapmadığı sürece iade yapılamaz.
+
+                            </p>
+                            <p>
+                                • Dijitalistasyon.com sistem yöneticisine karşı yapılacak hakaret veya kötüye kullanım tespit edilirse bakiyeye el konulup gönderilen takipçi veya beğeni işlemlerinin geri alınma hakkını gizli tutar.
+                            </p>
+                            <p>
+                                • Çalıntı kredi kartı yada farklı yöntemler ile başkasının adına ödeme yapılırsa hesap feshedilecektir istisnasız.
+                            </p>
+                            <p>
+                                • Siparişler sisteme girildikten sonra iptal/iade talebiniz kabul edilmeyecektir. Eğer sipariş tamamlanmazsa/kısmen tamamlanırsa sistem otomatik olarak geri ödeme yapacaktır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="assets/js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+
+  </body>
+</html>

@@ -1,0 +1,1036 @@
+@font-face {
+    font-family: Montserrat light;
+    src: url(../fonts/Montserrat/Montserrat-Light.otf)
+}
+
+@font-face {
+    font-family: Montserrat bold;
+    src: url(../fonts/Montserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+    font-family: Montserrat regular;
+    src: url(../fonts/Montserrat/Montserrat-Regular.otf);
+}
+
+@font-face {
+    font-family: Montserrat medium;
+    src: url(../fonts/Montserrat/Montserrat-Medium.otf);
+}
+
+@font-face {
+    font-family: Socialize;
+    src: url(../fonts/Socialize/Socialize.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+:root {
+    --first-color: #213FB2;
+    --second-color: #fff;
+    --three-color: #000;
+    --four-color: #2F5AFF;
+}
+body,html {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    background: #F5F6F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mainSection{
+    width: 100%;
+}
+.sidebar{
+    width: 300px;
+    height:auto;
+    background:var(--second-color);
+}
+.sidebar.sidebarClose{
+    width: 90px;
+}
+.sidebarHidden{
+    display: none !important;
+}
+.sidebar .logoDiv, 
+.sidebar .imgDiv{
+    width: 100%;
+}
+.sidebar .imgDiv{
+    padding: 40px;
+}
+.sidebar.sidebarClose .imgDiv{
+    padding: 18px;
+}
+/* .sidebar .imgDiv img{
+    width: 100%;
+} */
+.sidebar .logoDiv{
+    position: relative;
+}
+.sidebar .logoDiv .closeOpenSidebarBTN{
+    border: none;
+    outline: none;
+    background: var(--four-color);
+    color: var(--second-color);
+    width: 30px;
+    height: 50px;
+    border-radius: 100px 0 0 100px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.sidebar .logoDiv .closeOpenSidebarBTN::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 10px;
+    background: var(--four-color);
+}
+.sidebar.sidebarClose .logoDiv .closeOpenSidebarBTN{
+
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+}
+.sidebar .sidebarContent{
+    padding: 40px;
+}
+.sidebar.sidebarClose .sidebarContent{
+    padding: 14px;
+}
+.sidebar .sidebarContent .balance{
+    width: 100%;
+    height: 59px;
+    border-radius: 10px;
+    background:#2F5AFF;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 25px;
+}
+.sidebar .sidebarContent .balance .icon{
+    background:#2F5AFF;
+    border: 2px solid var(--second-color);
+    height:75px;
+    width:75px;
+    border-radius:50% ;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    transform:translateY(-35%)
+}
+.sidebar .sidebarContent .balance .balanceText h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #E6ECFF;
+}
+.sidebar .sidebarContent .balance .balanceText div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar .sidebarContent .balance .balanceText div p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #E6ECFF;
+}
+.sidebar .sidebarContent .balance .balanceText div .hiddenShowBalanceBTN{
+    background:transparent;
+    color: var(--second-color);
+    font-size: 13px;
+}
+.sidebar .sidebarContent .sidebarList{
+    margin-top: 75px;
+}
+.sidebar .sidebarContent .sidebarList ul li{
+    height:54px;
+    border-radius: 5px;
+}
+.sidebar .sidebarContent .sidebarList ul li a{
+    height:100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 19px;
+    transition: all 300ms;
+}
+.sidebar .sidebarContent .sidebarList ul li a:hover{
+    background:#E7E7E8;
+}
+.sidebar .sidebarContent .sidebarList ul li a .icon{
+    margin-right: 12px;
+}
+.sidebar.sidebarClose .sidebarContent .sidebarList ul li a .icon{
+    margin: 0;
+}
+.sidebar .sidebarContent .sidebarList ul li a .text p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #0F1419;
+}
+.sidebar .sidebarContent .sidebarList ul li a .text span{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(91, 88, 88);
+}
+
+
+.sidebar .sidebarContent .showMore .showMoreBTN{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#2F5AFF;
+    border-radius: 3px;
+    color: var(--second-color);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.sidebar .sidebarContent .showMore  .showMoreList{
+    margin-top: 18px;
+    background: #F5F6F7;
+    border-radius: 5px;
+    padding: 14px 19px;
+}
+.sidebar .sidebarContent .showMore  .showMoreList.hidden{
+    display: none;
+}
+.sidebar .sidebarContent .showMore  .showMoreList ul li a {
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 10px 0;
+    transition: all 300ms;
+}
+.sidebar.sidebarClose .sidebarContent .showMore  .showMoreList ul li a{
+    padding: 10px 0px;
+    justify-content: center;
+}
+
+.sidebar .sidebarContent .showMore  .showMoreList ul li a .icon{
+    margin-right: 12px;
+}
+.sidebar .sidebarContent .showMore  .showMoreList ul li a .icon path {
+    fill: black;
+}
+.sidebar.sidebarClose .sidebarContent .showMore  .showMoreList ul li a .icon{
+    margin: 0;
+}
+.sidebar .sidebarContent .showMore  .showMoreList ul li a .text p{
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+/* mainSection */
+.mainSection .dashboardHeader{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    background: var(--second-color);
+    padding: 0 21px;
+}
+.mainSection .dashboardHeader div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+.mainSection .dashboardHeader div button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.mainSection .dashboardHeader div.balanceDiv{
+    background-color: var(--four-color);
+    color: var(--second-color);
+    border-radius: 3px;
+    width: 94px;
+    height: 29px;
+    justify-content: space-evenly;
+}
+.mainSection .dashboardHeader div.balanceDiv button{
+    color: var(--second-color);
+}
+
+.mainSection .contents{
+    padding: 0 21px;
+}
+.mainSection .contents .informationsAboutUser{
+    margin: 10px 0;
+}
+.mainSection .contents .informationsAboutUser .colDiv{
+    padding: 0 5px;
+}
+.mainSection .contents .informationsAboutUser .infoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--second-color);
+    height: 76px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+.mainSection .contents .informationsAboutUser .infoDiv i{
+    font-size: 25px;
+}
+
+.mainSection .contents .allServices{
+    background: var(--second-color);
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+.mainSection .contents .allServices .headerCol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.mainSection .contents .allServices .headerCol h3{
+    font-size: 16px;
+    font-family: Montserrat bold;
+    font-weight: bold;
+    color: #292C36;
+}
+.mainSection .contents .allServices .headerCol  p{
+    font-size: 14px;
+    font-family: Montserrat regular;
+    text-align: end;
+    color: #CCD0D8;
+}
+.mainSection .contents .allServices .col-lg-4{
+    margin: 10px 0;
+}
+.mainSection .contents .allServices .cardContent{
+    background-color: #F2F5FB;
+    border-radius: 10px;
+}
+.mainSection .contents .allServices .cardContent .cardHeader{
+    border-bottom: 1px solid #000000;
+    padding: 24px 23px;
+}
+.mainSection .contents .allServices .cardContent .cardHeader h5{
+    font-size: 14px;
+    font-family: Montserrat bold;
+    font-weight: bold;
+    color: #52667B;
+}
+
+.mainSection .contents .allServices .cardContent .contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.mainSection .contents .allServices .cardContent .contents p{
+    color: #52667B;
+    font-size: 12px;
+    font-family: Montserrat bold;
+    font-weight: bold;
+
+}
+.mainSection .contents .allServices .cardContent .contents img{
+    max-width: 150px;
+    max-height: 125px;
+    margin: 15px 0 10px 0 ;
+}
+.mainSection .contents .allServices .cardContent .contents .BTN{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+}
+.mainSection .contents .allServices .cardContent .contents .BTN.showDetails{
+    color: #4EBE86;
+    background: rgba(78, 190, 134, 0.2);
+}
+.mainSection .contents .allServices .cardContent .contents .BTN.subscribe{
+    color: #2F5AFF;
+    background: rgba(47, 90, 255, 0.2);
+}
+.mainSection .contents .allServices .cardContent .contents .BTN.unsubscribe{
+    color: #E7405C;
+    background: rgba(231, 64, 91, 0.2);
+}
+
+.dashboardTop{
+    background: var(--four-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 40px;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+.dashboardTop .image{
+    margin-right: 45px;
+}
+.dashboardTop .textContent h4{
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Montserrat bold;
+}
+.dashboardTop .textContent p{
+    color: var(--second-color);
+    font-size: 12px;
+    font-family: Montserrat medium;
+    margin: 13px 0;
+}
+.dashboardTop .textContent a{
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Montserrat bold;
+}
+.dashboardTop .textContent a i{
+    margin-left: 5px;
+}
+
+
+
+.mainSection .contents .mainContent .right{
+    padding-right: 0;
+}
+.mainSection .contents .mainContent .right .content{
+    background: var(--second-color);
+    border-radius: 5px;
+}
+.mainSection .contents .mainContent .right .content .top{
+    width: 100%;
+    display: flex;
+    padding: 10px 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainSection .contents .mainContent .right .content .top h4{
+    font-size: 16px;
+    color: #292C36;
+    font-weight: bold;
+    font-family: Montserrat bold;
+}
+.mainSection .contents .mainContent .right .content .top .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-color);
+    border: 1px solid #E6ECFF ;
+    max-width: 200px;
+    min-width: 150px;
+    border-radius: 10px;
+}
+.mainSection .contents .mainContent .right .content .top .search input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+}
+.mainSection .contents .mainContent .right .content .top .search input::placeholder{
+    font-size: 12px;
+    color: #292C36;
+    font-family: Montserrat medium;
+}
+.mainSection .contents .mainContent .right .content .top .search i{
+    width: 10%;
+    margin-right: 5px;
+    padding: 10px;
+}
+.mainSection .contents .mainContent .right .content .headerText{
+    background: #E6ECFF;
+    padding: 16px 15px;
+}
+.mainSection .contents .mainContent .right .content .headerText p{
+    font-size: 12px;
+    color: #23252E;
+    font-weight: bold;
+    font-family: Montserrat bold;
+}
+.mainSection .contents .mainContent .right .content .infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 29px 12px;
+}
+.mainSection .contents .mainContent .right .content .infos .infoDiv {
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mainSection .contents .mainContent .right .content .infos .infoDiv .infoIcon{
+    margin-right: 5px;
+}
+.mainSection .contents .mainContent .right .content .infos .infoDiv .infoText h4{
+    color: #292C36;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Montserrat bold;
+}
+.mainSection .contents .mainContent .right .content .infos .infoDiv .infoText p{
+    color: #292C36;
+    font-size: 14px;
+    font-family: Montserrat medium;
+}
+.mainSection .contents .mainContent .right .content .mainInfoText{
+    padding: 18px 12px;
+    border-top: 1px solid  #E6ECFF;
+}
+.mainSection .contents .mainContent .right .content .mainInfoText h3{
+    font-size: 14px;
+    color: #292C36;
+    font-weight: bold;
+    font-family: Montserrat bold;
+    margin-bottom: 10px;
+}
+.mainSection .contents .mainContent .right .content .mainInfoText ul{
+    margin: 0;
+}
+.mainSection .contents .mainContent .right .content .mainInfoText ul li{
+    font-size: 14px;
+    font-family: Montserrat medium;
+    color: #292C36;
+}
+.mainSection .contents .mainContent .right .content .topText{
+    border-bottom: 1px solid #E6ECFF;
+}
+.mainSection .contents .mainContent .right .content .topText h3{
+    font-size: 18px;
+    font-family: Montserrat bold;
+}
+.mainSection .contents .mainContent .right .content.textsContent .textContent,
+.mainSection .contents .mainContent .right .content .topText    {
+    padding: 15px;
+}
+.mainSection .contents .mainContent .right .content.textsContent:not(:first-child){
+    margin-top: 20px;
+}
+.mainSection .contents .mainContent .right .content.textsContent .texts  ul li{
+    font-size: 14px;
+    font-family: Montserrat medium;
+    margin: 10px 0;
+}
+.mainSection .contents .mainContent .right.profileRightCol .item{
+    padding: 0 15px;
+}
+.mainSection .contents .mainContent .right.profileRightCol .item{
+    margin-top: 15px;
+}
+.mainSection .contents .mainContent .right.profileRightCol .item h4{
+    font-size: 14px;
+    color: #23252E;
+    font-family: Montserrat medium;
+    margin-bottom: 9px;
+}
+.mainSection .contents .mainContent .right.profileRightCol .item input{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.mainSection .contents .mainContent .right.profileRightCol .submit{
+    padding: 15px;
+}
+.mainSection .contents .mainContent .right .content{
+    padding: 10px 0;
+
+}
+.mainSection .contents .mainContent .right .content:not(:nth-child(1)){
+    margin-top: 30px;
+}
+
+.mainSection .contents .mainContent .right .content .item button{
+    margin-top: 10px;
+}
+
+
+.mainSection .contents .mainContent .right .content  .item .select{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.mainSection .contents .mainContent .right .content  .item .select .selectedContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.mainSection .contents .mainContent .right .content  .item .select .selectedText{
+    color: #23252E;
+    font-size: 14px;
+    font-family: Montserrat medium;
+}
+.mainSection .contents .mainContent .right .content  .item .select .selectionsForTime{
+    position: absolute;
+    top: 102%;
+    left: 0;
+    background: var(--second-color);
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 100;
+
+}
+.mainSection .contents .mainContent .right .content  .item .select .selectionsForTime.hidden{
+    display: none;
+}
+.mainSection .contents .mainContent .right .content  .item .select .selectionsForTime  li{
+    cursor: pointer;
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+
+
+
+.mainSection .contents .mainContent .right .content  .item .selectUserLanguage{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.mainSection .contents .mainContent .right .content  .item .selectUserLanguage .selectedContentUserLanguage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.mainSection .contents .mainContent .right .content  .item .selectUserLanguage .selectedTextUserLanguage{
+    color: #23252E;
+    font-size: 14px;
+    font-family: Montserrat medium;
+}
+.mainSection .contents .mainContent .right .content  .item .selectUserLanguage .selectionsForUserLanguage{
+    position: absolute;
+    top: 102%;
+    left: 0;
+    background: var(--second-color);
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 100;
+
+}
+.mainSection .contents .mainContent .right .content  .item .selectUserLanguage .selectionsForUserLanguage.hidden{
+    display: none;
+}
+.mainSection .contents .mainContent .right .content  .item .selectUserLanguage .selectionsForUserLanguage  li{
+    cursor: pointer;
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.mainSection .contents .mainContent .left{
+    padding-left:0 ;
+}
+
+.mainSection .contents .mainContent .left .content {
+    background: var(--second-color);
+    border-radius: 10px;
+}
+.mainSection .contents .mainContent .left .content .orders{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainSection .contents .mainContent .left .content .orders a{
+    width: 25%;
+    height: 45px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Montserrat medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #292C36;
+    border: 1px solid #E6ECFF;
+}
+.mainSection .contents .mainContent .left .content .orders a.active{
+    background: #E6ECFF;
+}
+
+.mainSection .contents .mainContent .left .content > div   {
+    padding: 20px;
+}
+.mainSection .contents .mainContent .left .content  .item:not(:first-child){
+    margin-top: 11px;
+}
+.mainSection .contents .mainContent .left .content  .item h4  {
+    font-size: 14px;
+    color: #23252E;
+    font-family: Montserrat medium;
+    margin-bottom: 9px;
+}
+.mainSection .contents .mainContent .left .content  .item input{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.mainSection .contents .mainContent .left .content  .item input.disabled{
+    background: #E6ECFF;
+}
+.mainSection .contents .mainContent .left .content  .item textarea{
+    width: 100%;
+    max-height: 226px;
+    min-height: 150px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.mainSection .contents .mainContent .left .content .submit {
+    margin-top: 10px;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item ul{
+    z-index: 100;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .select{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.mainSection .contents .mainContent .left .content .newOrder .item .select .selectedContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .select .selectedText{
+    color: #23252E;
+    font-size: 14px;
+    font-family: Montserrat medium;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .select .selectionsForCategory{
+    position: absolute;
+    top: 102%;
+    left: 0;
+    background: var(--second-color);
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .select .selectionsForCategory.hidden{
+    display: none;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .select .selectionsForCategory  li{
+    cursor: pointer;
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E6ECFF;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectedContentService{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectedTextService{
+    color: #23252E;
+    font-size: 14px;
+    font-family: Montserrat medium;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService{
+    position: absolute;
+    top: 102%;
+    left: 0;
+    background: var(--second-color);
+    width: 100%;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService.hidden{
+    display: none;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li{
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #E6ECFF;
+    padding: 14px;
+    background: var(--second-color);
+    transition: all 300ms;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li:hover{
+    background: #E6ECFF;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .mainValueText{
+    color: #292C36;
+    font-size: 14px;
+    font-family: Montserrat bold;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .pieceDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .pieceDiv p{
+    font-size: 12px;
+    color: #292C36;
+    font-family: Montserrat regular;
+    margin-right: 10px;
+    
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .pieceDiv p span{
+    font-size: bold;
+    font-family: Montserrat bold;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .minAndmax{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .minAndmax p{
+    font-size: 12px;
+    color: #292C36;
+    font-family: Montserrat regular;
+    margin-right: 10px;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .minAndmax p span{
+    font-size: bold;
+    font-family: Montserrat bold;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .minAndmax p.clockText{
+    color: #2F5AFF;
+    font-family: Montserrat bold;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .minAndmax p.clockText span{
+    font-family: Montserrat regular;
+}
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .serviceKind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 108px;
+
+}
+
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .serviceKind p{
+    color: var(--second-color);
+    font-size: 12px;
+    font-family: Montserrat medium;
+}
+
+.mainSection .contents .mainContent .left .content .newOrder .item .selectForService .selectionsForService  li .serviceKind.guarrantedKind{
+    background: #4EBE86;
+}
+
+.mainSection .contents .mainContent .left .content .newOrder .item  .minCountandMaxCount p{
+    color: #2F5AFF;
+    font-size: 14px;
+    font-family: Montserrat medium;
+    margin-top: 5px;
+}
+
+.mainSection .contents .mainContent .left .content  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+.mainSection .contents .mainContent .left .content  .buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-right: 10px;
+    max-height: 40px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+.mainSection .contents .mainContent .left .content  .buttons button:nth-child(1){
+    background: #2F5AFF;
+}
+.mainSection .contents .mainContent .left .content  .buttons button:nth-child(2){
+    background: #4EBE86;
+}
+.mainSection .contents .mainContent .left .content .headerText{
+    border-bottom: 1px solid #E6ECFF;
+}
+.mainSection .contents .mainContent .left .content .headerText h3{
+    font-size: 18px;
+    font-family: Montserrat bold;
+}
+.mainSection .contents .mainContent .left .content .related .hosting{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E6ECFF;
+}
+.mainSection .contents .mainContent .left .content .related .hosting > h4{
+    font-size: 14px;
+    font-family: Montserrat medium;
+    margin-bottom: 20px;
+}
+.mainSection .contents .mainContent .left .content:nth-child(2){
+    margin-top: 20px;
+}
+.mainSection .contents .mainContent .left .content:nth-child(2) .orderWay ul li{
+    font-size: 14px;
+    font-family: Montserrat medium;
+    margin: 10px 0;
+}
+.mainSection .contents.oneContent{
+    border-radius: 5px;
+}
+.mainSection .contents .top.agreementTop{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mainSection .contents .top.agreementTop a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 60px;
+    background: white;
+    color: #52667B;
+    font-size: 16px;
+    font-family: Montserrat bold;
+
+}
+.mainSection .contents .top.agreementTop a.active{
+    background: #E6ECFF;
+}
+.mainSection .contents .agreementDiv{
+    background: white;
+    margin-top: 29px;
+    padding:25px;
+
+}
+.mainSection .contents .agreementDiv .headerText{
+    border-bottom: 1px solid #E6ECFF;
+    padding: 0px 0 17px 0;
+}
+.mainSection .contents .agreementDiv .headerText h3{
+    color: #52667B;
+    font-size: 16px;
+    font-family: Montserrat bold;
+
+}
+.mainSection .contents .agreementDiv .text h4{
+    color: #52667B;
+    font-size: 18px;
+    font-family: Montserrat bold;
+    margin: 25px 0 15px 0 ;
+
+}
+.mainSection .contents .agreementDiv .text p{
+    color: #52667B;
+    font-size: 14px;
+    font-family: Montserrat regular;
+    margin: 10px 0;
+
+}
