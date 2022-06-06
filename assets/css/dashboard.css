@@ -688,13 +688,48 @@ main{
     align-items: center;
     padding: 14px;
 }
+.mainSection .contents .mainContent .right .invitationUser h4{
+    font-size: 14px;
+    font-family: Montserrat medium;
+    color: #23252E;
+
+}
+.mainSection .contents .mainContent .right .invitationUser a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+    padding: 16px 19px;
+    margin: 10px 0;
+    color: #23252E;
+    word-break: break-all;
+}
+.mainSection .contents .mainContent .right .invitationUser p{
+    font-size: 14px;
+    font-family: Montserrat medium;
+    color: #23252E;
+}
+.mainSection .contents .mainContent .right .termsOfUse h4{
+    font-size: 14px;
+    font-family: Montserrat bold;
+    color: #292C36;
+
+}
+.mainSection .contents .mainContent .right .termsOfUse ul li{
+    font-size: 14px;
+    font-family: Montserrat bold;
+    color: #292C36;
+}
 
 
 
-
-
-
-
+.mainSection .contents .mainContent .left,
+.mainSection .contents .mainContent .right{
+    margin-top: 30px;
+}
 
 
 
@@ -1034,3 +1069,137 @@ main{
     margin: 10px 0;
 
 }
+
+.mainSection .contents .searchMainDiv{
+    background: white;
+    width: 100%;
+    height: 80px;
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+}
+
+.mainSection .contents .searchMainDiv .searchDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background: #F9FAFF;
+    padding: 10px;
+}
+
+.mainSection .contents .searchMainDiv .searchDiv input{
+    width: 100%;
+    background: transparent;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.mainSection .contents .tableContents{
+    width: 100%;
+    background: white;
+    margin-top: 30px;
+
+}
+.mainSection .contents .tableContents h2{
+    font-size: 14px;
+    font-family: Montserrat bold;
+    border-top: 1px solid #E6ECFF;
+    border-left: 1px solid #E6ECFF;
+    border-right: 1px solid #E6ECFF;
+    padding: 10px;
+}
+.mainSection .contents .tableContents table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.mainSection .contents .tableContents table th,
+.mainSection .contents .tableContents table td{
+    border: 1px solid #E6ECFF;
+    text-align: left;
+    padding: 8px;
+}
+.mainSection .contents .tableContents table th{
+    font-size: 14px;
+    font-family: Montserrat bold;
+
+}
+.mainSection .contents .tableContents table td{
+    font-size: 14px;
+    font-family: Montserrat medium;
+
+}
+.mainSection .contents .tableContents table td span{
+    font-size: 13px;
+    color: #FE5252;
+}
+
+.mainSection .contents .filterDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 28px;
+}
+.mainSection .contents .filterDiv button{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Montserrat medium;
+
+}
+.mainSection .contents .filterDiv button:nth-child(1){
+    color: white;
+    background: #2F5AFF;
+}
+.mainSection .contents .filterDiv button:nth-child(2){
+    color: #0F1419;
+    background: white;
+    margin-left: 14px;
+}
+
+.mainSection  .inputStyleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E6ECFF;
+    border-radius: 5px;
+    padding: 16px 19px;
+    margin: 3px 0;
+}
+.mainSection  .inputStyleDiv.disable{
+    background-color: #E6ECFF;
+}
+.mainSection .referansSystem h2{
+    font-size: 18px;
+    font-family: Montserrat bold;
+}
+.mainSection .referansSystem .contentDiv > div:nth-child(2){
+    margin-top: 33px;
+}
+.mainSection .referansSystem .contentDiv button{
+    margin-top: 23px;
+}
+
+.mainSection  .inputStyleDiv p,
+.mainSection  .inputStyleDiv span{
+    font-size: 14px;
+    font-family: Montserrat medium;
+
+}
+.mainSection .referansSystem .contentDiv button{
+    font-size: 12px;
+    font-family: Montserrat medium;
+}    
