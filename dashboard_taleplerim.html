@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="sidebar">
+            <div class="logoDiv">
+              <div class="imgDiv">
+                <img class="bigLogo" src="./assets/img/Group 627.png" />
+                <img class="smallLogo sidebarHidden" src="./assets/img/Path 2943.png">
+              </div>
+              <div>
+                <button class="closeOpenSidebarBTN"><i class="fa-solid fa-angles-left"></i></button>
+              </div>
+            </div>
+            <div class="sidebarContent">
+              <div class="balance">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30.154"
+                    height="29.267"
+                    viewBox="0 0 30.154 29.267"
+                  >
+                    <path
+                      id="svg8"
+                      d="M10.543,17.577V16.069m6.034,1.509V13.051m6.034,4.526V10.034M10.543,29.646l6.034-6.034,6.034,6.034M3,4H30.154M4.509,4H28.646V22.1a1.509,1.509,0,0,1-1.509,1.509H6.017A1.509,1.509,0,0,1,4.509,22.1Z"
+                      transform="translate(-1.5 -2.5)"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </div>
+                <div class="balanceText">
+                  <h4>Bakiyeniz</h4>
+                  <div class="balanceNumberDiv">
+                    <p class="balanceTextMain"><span>10.00</span> ₺</p>
+                    <button class="hiddenShowBalanceBTN"><i class="fa-solid fa-eye-slash"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebarList">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Bakiye Yükle</p>
+                        <span>10.00 ₺</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            id="siparislerim"
+                            d="M21.591,22.161a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,21.591,22.161Zm-14.25,0a2.249,2.249,0,1,1-3.18,0A2.247,2.247,0,0,1,7.34,22.161ZM19.47,23.22a.751.751,0,1,0,1.148.105l-.087-.105-.1-.086A.751.751,0,0,0,19.47,23.22Zm-14.25,0a.751.751,0,1,0,1.148.105L6.28,23.22l-.1-.086a.751.751,0,0,0-.957.086ZM25.251,2a.75.75,0,0,1,.135,1.488l-.135.012H23.568a.751.751,0,0,0-.719.533l-.026.12-1.91,14.639a2.252,2.252,0,0,1-2.021,1.95l-.21.009H2.75a.75.75,0,0,1-.135-1.488l.135-.012H18.684a.749.749,0,0,0,.717-.533l.027-.12L21.336,3.959a2.253,2.253,0,0,1,2.022-1.95L23.568,2h1.683ZM15.5,5a2.251,2.251,0,0,1,2.25,2.25V15.5a2.251,2.251,0,0,1-2.25,2.25h-9A2.251,2.251,0,0,1,4.25,15.5V7.25A2.251,2.251,0,0,1,6.5,5Zm0,1.5H13.249v3.75a.751.751,0,0,1-.615.738L12.5,11h-3a.75.75,0,0,1-.75-.75V6.5H6.5a.751.751,0,0,0-.738.615L5.75,7.25V15.5a.75.75,0,0,0,.75.75h9a.75.75,0,0,0,.75-.75V7.25A.75.75,0,0,0,15.5,6.5Zm-3.75,0h-1.5v3h1.5Z"
+                            transform="translate(-2 -2)"
+                            fill="#23252e"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <p>Yeni Sipariş</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="showMore">
+                <button class="showMoreBTN">Daha Fazla Göster</button>
+                <div class="showMoreList hidden">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              id="sattiklarim"
+                              d="M23.75,2A2.251,2.251,0,0,1,26,4.25v19.5A2.251,2.251,0,0,1,23.75,26H4.25A2.251,2.251,0,0,1,2,23.75V4.25A2.251,2.251,0,0,1,4.25,2Zm0,1.5H4.25a.75.75,0,0,0-.75.75v19.5a.75.75,0,0,0,.75.75h19.5a.75.75,0,0,0,.75-.75V4.25A.75.75,0,0,0,23.75,3.5Zm-3,16.5a.776.776,0,0,1,.75.8.788.788,0,0,1-.615.788l-.135.013H7.25a.778.778,0,0,1-.75-.8.786.786,0,0,1,.615-.786L7.25,20ZM10.3,7.25a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L9.5,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.105-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Zm7.5,0a.8.8,0,0,1,.75.489l1.98,1.98a.75.75,0,0,1-.955,1.148l-.1-.085-.87-.873V16.25a.775.775,0,0,1-.8.75.786.786,0,0,1-.786-.615L17,16.25V9.809l-.969.972a.751.751,0,0,1-.957.086l-.1-.086a.751.751,0,0,1-.086-.957l.086-.105,2.25-2.25a.756.756,0,0,1,.564-.219Z"
+                              transform="translate(-2 -2)"
+                              fill="#c8ccda"
+                            />
+                          </svg>
+                        </div>
+                        <div class="text">
+                          <p>Gösterge Paneli</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        <section class="mainSection">
+            <div class="dashboardHeader">
+                <div class="balanceDiv">
+                    <p> <span>1.270</span> ₺ </p>
+                    <button class="hiddenShowBalanceBTN"><i class="fa-solid fa-eye-slash"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-regular fa-sun-bright"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-light fa-bell"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-light fa-bars"></i></button>
+                </div>
+                <div>
+                    <button><i class="fa-light fa-user"></i></button>
+                </div>
+            </div>
+            <div class="contents oneContent">
+                <div class="dashboardTop">
+                    <div class="image">
+                        <img src="assets/img/11.png" alt="">
+                    </div>
+                    <div class="textContent">
+                        <h4>Sipariş Oluştur</h4>
+                        <p>2000 TL ve üzeri ödemelerde otomatik olarak %3 bonus verilmektedir.😃</p>
+                        <a href="#">Bakiye ekle <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <div class="tabContentMain">
+                    <div class="tabWays">
+                        <button class="active">1. Doldurun</button>
+                        <button>1. Doldurun</button>
+                        <button>1. Doldurun</button>
+                        <button>1. Doldurun</button>
+                    </div>
+                    <div class="tabContentsDiv">
+                        <div class="tabCOntent">
+                            <h3>
+                                Sipariş - Yeniden Doldur
+                            </h3>
+                            <p>
+                                Bizden yeniden dolum talebinde bulunmadan önce, siparişinizin yeniden dolum için uygun olup olmadığını lütfen aşağıaaki bilgileri
+kontrol edin.
+                            </p>
+                            <h3>Uygun Dolum Gereksinimi</h3>
+                            <ul>
+                                <li>
+                                    •     Dolumdan bahsedip bahsetmediğimizi varsa, Hizmetler başlığını kontrol edin.
+                                </li>
+                                <li>
+                                    
+•     Sipariş tarihini ve doldurma süresini kontrol edin.
+
+                                </li>
+                                <li>
+                                    •     Başlangıç sayınızı ve mevcut takipçi sayınızı, izlenme sayınızı veya beğenilerinizi kontrol edin.
+                                </li>
+                            </ul>
+                            <a href="#">Siparişlerimin yeniden doldurulması ne kadar sürer?</a>
+                            <a href="#">Siparişlerimin yeniden doldurulması ne kadar sürer?</a>
+                        </div>
+                        <div class="createQuestions">
+                            <p>Sorununuz Çözülmediyse Bir Bilet Oluşturun</p>
+                            <button class="btn btn-primary">
+                                Talep Oluştur
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainContent helpContent container-fluid">
+                  <div class="row">
+                      <div class="div col-lg-8 left">
+                        <div class="chatContent content">
+                            <div class="headerText ">
+                                <h3>Sipariş Hakkında</h3>
+                            </div>
+                            <div class="messages">
+                                <div class="message other">
+                                    <p>Nbr kardeşim 👀</p>
+                                    <span>07.20 PM</span>
+                                </div>
+                                <div class="message other">
+                                    <p>Nbr kardeşim 👀</p>
+                                    <span>07.20 PM</span>
+                                </div>
+                                <div class="message me">
+                                    <span>07.20 PM</span>
+
+                                    <p>Nbr kardeşim 👀</p>
+                                </div>
+                                <div class="message me">
+                                    <span>07.20 PM</span>
+
+                                    <p>Nbr kardeşim 👀</p>
+                                </div>
+                                <div class="message other">
+                                    <p>Nbr kardeşim 👀</p>
+                                    <span>07.20 PM</span>
+                                </div>
+                                <div class="message me">
+                                    <span>07.20 PM</span>
+
+                                    <p>Nbr kardeşim 👀</p>
+                                </div>
+                            </div>
+                            <div class="messageSendContent">
+                                <textarea cols="30" rows="10">Lütfen mesajınızı yazın.</textarea>
+                                <button class="btn btn-primary">Cevapla</button>
+                            </div>
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="div col-lg-4 right">
+                          <div class="content textsContent">
+                              <div class="texts">
+                                  <div class="topText">
+                                      <h3>Destek Bilgisi</h3>
+                                  </div>
+                                  <div class="infoContent">
+                                      <ul>
+                                          <li>
+                                              <p>No</p>
+                                              <span>#7</span>
+                                          </li>
+                                          <li>
+                                            <p>No</p>
+                                            <span>#7</span>
+                                        </li>
+                                        <li>
+                                            <p>No</p>
+                                            <span>#7</span>
+                                        </li>
+                                        <li>
+                                            <p>No</p>
+                                            <span>#7</span>
+                                        </li>
+                                        <li>
+                                            <p>No</p>
+                                            <span>#7</span>
+                                        </li>
+                                      </ul>
+                                  </div>
+                                  <div class="note">
+                                      <h4>Not</h4>
+                                      <p>Destek taleplerine verilen cevaplar yoğunluğa göre 6 saate kadar
+                                        uzayabilmektedir. Lütfen sabırlı olun.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="content textsContent">
+                            <div class="texts">
+                                <div class="topText">
+                                    <h3>Destek Taleplerim</h3>
+                                </div>
+                                <div class="helpRequestContent">
+                                    <ul>
+                                        <li class="requestLi typeYanitlandi">
+                                            <div class="no">
+                                                <p>#22984</p>
+                                            </div>
+                                            <div class="aboutDelivery">
+                                                <p>Sipariş Hakkında</p>
+                                                <span>2020-04-25 15:39:25</span>
+                                            </div>
+                                            <div class="situation">
+                                                <p>Yanıtlandı</p>
+                                            </div>
+                                        </li>
+                                        <li class="requestLi typeKapandi">
+                                          <div class="no">
+                                              <p>#22984</p>
+                                          </div>
+                                          <div class="aboutDelivery">
+                                              <p>Sipariş Hakkında</p>
+                                              <span>2020-04-25 15:39:25</span>
+                                          </div>
+                                          <div class="situation">
+                                              <p>Kapandi</p>
+                                          </div>
+                                      </li>
+                                      <li class="requestLi typeBeklemede">
+                                        <div class="no">
+                                            <p>#22984</p>
+                                        </div>
+                                        <div class="aboutDelivery">
+                                            <p>Sipariş Hakkında</p>
+                                            <span>2020-04-25 15:39:25</span>
+                                        </div>
+                                        <div class="situation">
+                                            <p>Yanıtlandı</p>
+                                        </div>
+                                    </li>
+                                    <li class="requestLi typeYanitlandi">
+                                      <div class="no">
+                                          <p>#22984</p>
+                                      </div>
+                                      <div class="aboutDelivery">
+                                          <p>Sipariş Hakkında</p>
+                                          <span>2020-04-25 15:39:25</span>
+                                      </div>
+                                      <div class="situation">
+                                          <p>Yanıtlandı</p>
+                                      </div>
+                                  </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="assets/js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+
+  </body>
+</html>

@@ -1444,3 +1444,184 @@ main{
     background: #F1F6FC;
     color: black;
 }
+
+.chatContent{
+    background: white;
+}
+
+.chatContent .messages .message{
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    margin: 8px 0;
+}
+.chatContent .messages .message.me{
+    margin-left: auto;
+    justify-content: flex-end;  
+}
+.chatContent .messages .message p{
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat regular  ;
+    font-size: 13px;
+}
+.chatContent .messages .message.me p{
+    background: rgba(47, 90, 255, 0.2);
+    color: #2F5AFF;
+    padding: 20px 40px 20px 13px;
+}
+.chatContent .messages .message.other p{
+    background: #F8F9FA;
+    color: #52667B;
+    padding: 20px 40px 20px 13px;
+}
+.chatContent .messages .message span{
+    font-family: Montserrat regular  ;
+    font-size: 13px;
+    color: #0F1419;
+}
+.chatContent .messages .message.other span{
+    margin-left: 10px;
+}
+.chatContent .messages .message.me span{
+    margin-right: 10px;
+}
+
+
+.chatContent .messageSendContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.chatContent .messageSendContent textarea{
+    background: transparent;
+    outline: none;
+    border:1px solid #E6ECFF ;
+    border-radius: 5px;
+    height: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    width: 100%;
+    padding: 10px;
+}
+.chatContent .messageSendContent button{
+    margin-top: 15px;
+}
+.infoContent ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 25px 14px;
+}
+.infoContent ul li{
+    width: 33.33%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infoContent ul li p{
+    font-size: 14px;
+    color: #292C36;
+    font-family: Montserrat bold;
+}
+.infoContent ul li span{
+    font-size: 14px;
+    color: #292C36;
+    font-family: Montserrat medium;
+}
+.note{
+    padding: 18px 14px;
+    border-top: 1px solid #E6ECFF;
+}
+
+.note h4{
+    font-size: 14px;
+    color: #292C36;
+    font-family: Montserrat bold;
+}
+.note p{
+    font-size: 14px;
+    color: #292C36;
+    font-family: Montserrat medium;
+}
+.helpRequestContent{
+    padding: 0 10px;
+}
+.helpRequestContent li{
+    height: 72px;
+    background: #F8F9FA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.helpRequestContent li:hover{
+    background: #2F5AFF;
+}
+.helpRequestContent li:hover .no  p,
+.helpRequestContent li:hover .aboutDelivery  p,
+.helpRequestContent li:hover .aboutDelivery span
+{
+    color: white !important;
+}
+
+.helpRequestContent li.typeYanitlandi .no p{
+    color: #4EBE86;
+}
+.helpRequestContent li.typeYanitlandi .situation p{
+    color: #4EBE86;
+    background: rgba(78, 190, 134, 0.1);
+}
+.helpRequestContent li.typeYanitlandi:hover .situation p{
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+.helpRequestContent li.typeKapandi .situation p{
+    color: #E7405C;
+    background: rgba(231, 64, 92, 0.1);
+}
+.helpRequestContent li.typeKapandi:hover .situation p{
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+.helpRequestContent li.typeBeklemede .situation p{
+    color: #2F5AFF;
+    background: rgba(47, 90, 255, 0.1);
+}
+.helpRequestContent li.typeBeklemede:hover .situation p{
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+.helpRequestContent li .no p{
+    font-size: 14px;
+    font-family: Montserrat bold;
+    color: #52667B;
+}
+
+.helpRequestContent li .aboutDelivery p{
+    font-size: 14px;
+    font-family: Montserrat bold;
+    color: #52667B;  
+}
+.helpRequestContent li .aboutDelivery span{
+    font-size: 12px;
+    font-family: Montserrat regular;
+    color: #52667B;  
+}
+
+.helpRequestContent li .situation p{
+    padding: 10px 10px;
+    font-size: 12px;
+    font-family: Montserrat regular;
+    border-radius: 30px;
+}
